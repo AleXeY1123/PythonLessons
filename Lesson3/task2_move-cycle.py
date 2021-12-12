@@ -4,7 +4,11 @@ y = 0
 while True:
     direction=''
     step = ''
-    while (direction != 'вверх') and (direction != 'вниз') and (direction != 'влево') and (direction != 'вправо') and (direction != 'выход'):
+    while ((direction != 'вверх') and 
+            (direction != 'вниз') and 
+            (direction != 'влево') and 
+            (direction != 'вправо') and 
+            (direction != 'выход')):
         direction = input('Введите направление (вверх, вниз, влево, вправо) или выход: ')
 
     if direction == 'выход':

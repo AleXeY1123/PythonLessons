@@ -1,4 +1,5 @@
 def func(*args):
+    '''Возвращает сумму аргументов'''
     sum_args = 0
     for i in range(0, len(args)):
         sum_args += args[i]

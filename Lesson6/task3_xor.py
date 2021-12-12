@@ -1,4 +1,5 @@
 def func_xor(in_text, key):
+    '''Шифрование методом xor'''
     out_str = ''
     for i in range(len(in_text)):
         j = 0
@@ -16,9 +17,11 @@ else:
     in_text = ''
     try:
         if command == 1:
+            #Если нужно зашифровать
             with open('Lesson6/task3_in-data-decrypted.txt','r') as f:
                 in_text = f.read()
         elif command == 2:
+            #Если нужно расшифровать
             with open('Lesson6/task3_in-data-encrypted.txt','rb') as f:
                 in_text = f.read()
                 in_text = in_text.decode('utf-8')
@@ -30,9 +33,11 @@ else:
         print(out_str)
 
         if command == 1:
+            #Если нужно зашифровать
             with open('Lesson6/task3_in-data-encrypted.txt','wb') as f:
                 f.write(out_str.encode('utf-8'))
         elif command == 2:
+            #Если нужно расшифровать
             with open('Lesson6/task3_in-data-decrypted.txt','w') as f:
                 f.write(out_str)
 

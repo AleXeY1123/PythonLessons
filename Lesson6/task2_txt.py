@@ -13,7 +13,9 @@ for i in range(len(in_values)):
 print(f'C: {in_values[0]}  H: {in_values[1]}  O: {in_values[2]}')
 if not _exit:
     number_molecules = 0
-    while in_values[0] >= 2 and in_values[1] >= 6 and in_values[2] >= 1:
+    while (in_values[0] >= 2 and 
+            in_values[1] >= 6 and 
+            in_values[2] >= 1):
         number_molecules += 1
         in_values[0] -= 2
         in_values[1] -= 6

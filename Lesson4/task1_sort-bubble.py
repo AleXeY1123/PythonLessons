@@ -1,7 +1,7 @@
 from operator import le
 import random
-l = []
 
+l = []
 for i in range(0, 50):
     l.append(random.randint(0, 1000))
     

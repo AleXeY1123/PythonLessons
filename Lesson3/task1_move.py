@@ -2,8 +2,12 @@ x = 0
 y = 0
 direction=''
 step = ''
-while (direction != 'вверх') and (direction != 'вниз') and (direction != 'влево') and (direction != 'вправо'):
+while ((direction != 'вверх') and 
+        (direction != 'вниз') and 
+        (direction != 'влево') and 
+        (direction != 'вправо')):
     direction = input('Введите направление (вверх, вниз, влево, вправо): ')
+    
 while not step.isdigit():
     step = input('Введите количество шагов: ')
 
