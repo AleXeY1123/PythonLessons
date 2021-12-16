@@ -42,6 +42,3 @@ class Inventory:
         for i in range(len(self.inventory_contents)):
             out.append((self.inventory_contents[i], self.allowed_items.get(self.inventory_contents[i])))
         return out
-
-    def get(self):
-        return self.inventory_contents
