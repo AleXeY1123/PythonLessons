@@ -8,6 +8,7 @@ items = {'палка': 10,
         'куртка': 10, 
         'штаны':8, 
         'ботинки':6}
+        
 items_list = list(items.keys())
 inventory = ['палка', 'книга', 'ботинки']
 inventory_weight = 20
